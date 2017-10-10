@@ -1,20 +1,19 @@
 let mags = [{
-        mag: 5,
-        angle: 150
+        mag: 0,
+        angle: 0
     },
     {
-        mag: 8,
-        angle: 50
+        mag: 0,
+        angle: 0
+    },
+    {
+        mag: 0,
+        angle: 0
+    },
+    {
+        mag: 0,
+        angle: 0
     }
-    /*,
-        {
-            mag: 0,
-            angle: 0
-        },
-        {
-            mag: 0,
-            angle: 0
-        }*/
 ]
 
 function calcResultant() {
@@ -31,8 +30,8 @@ function calcResultant() {
         resultant.y += calcY(el.angle, el.mag)
     }, this)
     resultant.mag = pythag(resultant.x, resultant.y)
-    resultant.angle = tand(resultant.y / resultant.x)
-    //console.log(resultant)
+    resultant.angle = atand(resultant.y / resultant.x)
+    resultant.angle = resultant.angle < 0 ? 360 + resultant.angle : resultant.angle
     return resultant
 }
 
@@ -57,7 +56,7 @@ function tand(deg) {
 }
 
 function atand(deg) {
-    return Math.atan(deg * (Math.PI / 180))
+    return Math.atan(deg) * (180/ Math.PI)
 }
 
 function pythag(a, b) {

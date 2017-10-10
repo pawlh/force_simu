@@ -36,6 +36,7 @@ function drawLine(x,y,color) {
 function draw(tri) {
     let resultant = calcResultant()
     drawLine(calcX(resultant.angle, resultant.mag), calcY(resultant.angle, resultant.mag), resultant.color)
+    document.getElementById('resultDisp').innerHTML = 'Resultant: angle=' + resultant.angle + ', magnitude=' + resultant.mag
     if (tri.constructor === Array)
         tri.forEach(el => {
             drawLine(calcX(el.angle, el.mag), calcY(el.angle, el.mag), '#000000')
