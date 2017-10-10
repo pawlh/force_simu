@@ -26,7 +26,6 @@ function calcResultant() {
     }
     mags.forEach(el => {
         resultant.x += calcX(el.angle, el.mag)
-        console.log('adding ' + calcX(el.angle, el.mag) + ' to x')
         resultant.y += calcY(el.angle, el.mag)
     }, this)
     resultant.mag = pythag(resultant.x, resultant.y)
