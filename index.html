@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <canvas style="margin-left: 250px; margin-top: 50px;" height="500" width="500" id="main"></canvas>
+    <div>
+        <label for="angle">Angle1:</label>
+        <input data-id="0" type="number" id="angle" oninput="angUpdate(this)"/><br>
+        <label for="magnitude">Magnitude1:</label>
+        <input data-id="0" type="number" id="magnitude" oninput="magUpdate(this)"/>
+    </div>
+    <hr/>
+    <div>
+        <label for="angle2">Angle2:</label>
+        <input data-id="1" type="number" id="angle2" oninput="angUpdate(this)"/><br>
+        <label for="magnitude2">Magnitude2:</label>
+        <input data-id="1" type="number" id="magnitude2" oninput="magUpdate(this)"/>
+    </div>
+    <hr/>
+    <div>
+        <label for="angle3">Angle3:</label>
+        <input data-id="2" type="number" id="angle3" oninput="angUpdate(this)"/><br>
+        <label for="magnitude3">Magnitude3:</label>
+        <input data-id="2" type="number" id="magnitude3" oninput="magUpdate(this)"/>
+    </div>
+    <hr/>
+    <div>
+        <label for="angle4">Angle4:</label>
+        <input data-id="3" type="number" id="angle4" oninput="angUpdate(this)"/><br>
+        <label for="magnitude4">Magnitude4:</label>
+        <input data-id="3" type="number" id="magnitude4" oninput="magUpdate(this)"/>
+    </div>
+    <script src="canv.js"></script>
+    <script src="force.js"></script>
+    <script src="input.js"></script>
+</body>
+
+</html>
