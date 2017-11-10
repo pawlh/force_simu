@@ -31,7 +31,7 @@ function calcResultant() {
     resultant.mag = pythag(resultant.x, resultant.y)
     resultant.angle = atand(resultant.y / resultant.x)
     resultant.angle = resultant.angle < 0 ? 360 + resultant.angle : resultant.angle
-    resultant.angle *= -1
+    resultant.angle += 180
     return resultant
 }
 
