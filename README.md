@@ -13,4 +13,4 @@ Still in the poof-of-concept stage, this simulator can take an input of up to fo
 + Probably a lot of features, but I'll add more as more as my Physics class demands
 
 ## So, uh, any live demos floating around?
-Yep there sure is! Checkout [pawlh.github.io/force_simu](https://pawlh.github.com/force_simu).
+Yep there sure is! Checkout [pawlh.github.io/force_simu](https://pawlh.github.io/force_simu).
